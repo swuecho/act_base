@@ -10,8 +10,11 @@ build:
 push_to_local:
 	docker tag  echowuhao/act_base $(local_registry)/act_base:$(version)
 	docker push  $(local_registry)/act_base:$(version)
-push_to_remote:
+	
+push_to_dockerhub:
 	docker push echowuhao/act_base
+
+push_to_remote:
 	docker tag  echowuhao/act_base $(aliyun_registry_bestqa)/act_base:$(version)
 	docker push $(aliyun_registry_bestqa)/act_base:$(version)
 	docker tag  echowuhao/act_base $(github_pkg_registry_surveyresearch)/act_base:$(version)
