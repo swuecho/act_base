@@ -1,5 +1,6 @@
 
 FROM python:buster
+ENV TERM=xterm-256color
 
 RUN \
   echo "deb https://deb.nodesource.com/node_12.x buster main" > /etc/apt/sources.list.d/nodesource.list && \
