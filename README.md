@@ -1,5 +1,7 @@
 # act image with docker and docker-compose
 
+size is about 1.63GB. Could be made smaller, but it is not a problem I worry about ATM.
+
 ```
 ack -l # list jobs
 ```
